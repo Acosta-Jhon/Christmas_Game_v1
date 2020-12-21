@@ -1,6 +1,6 @@
 header{
     height: 50px;
-    border: 1px solid black;
+    border: 1px solid red;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
@@ -10,7 +10,7 @@ header{
 .titulo {
     font-size: 25px;
     padding: 10px;
-    color: #fff;
+    color:green;
 }
 
 .boton-reiniciar {

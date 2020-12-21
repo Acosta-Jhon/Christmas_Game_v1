@@ -1,5 +1,5 @@
 import shuffle from 'lodash.shuffle'
-import FontAwesonmeClasses from './fontAwesonmeClasses'
+import FontAwesonmeClasses from '../../utils/fontAwesonmeClasses'
 
 const NUMERO_DE_CARTAS = 20;
 
