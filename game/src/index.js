@@ -5,18 +5,20 @@ import 'font-awesome/css/font-awesome.css';
 //import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import { Home } from './Home';
-import LevelOne from "./levels/LevelOne"
+import Home from './Home';
+import LevelOne from "./levels/LevelOne/LevelOne"
+//import LevelTwo from './levels/LevelTwo/LevelTwo';
+import LevelThree from './levels/LevelThree/LevelThree';
 
 render(
   <Router>
-      <Switch>
+    <Switch>
 
       <Route exact path="/" component={Home} />
+      <Route exact path="/level_one" component={LevelOne} />
+      <Route exact path="/level_two" component={LevelThree} />
 
-       <Route exact path="/level_one" component={LevelOne} />
-
-      </Switch>
+    </Switch>
   </Router>,
   document.getElementById('root')
 );

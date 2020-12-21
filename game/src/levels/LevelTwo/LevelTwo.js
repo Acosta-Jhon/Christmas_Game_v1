@@ -1,39 +1,14 @@
 import { Component } from 'react';
-import '../assets/LevelOne.css';
-import  Header  from '../components/Header';
-import Tablero from '../components/Tablero';
-import construirBaraja from '../utils/Construir_Baraja'
+import './LevelOne.css';
+import  Header  from '../../components/Header';
+import Tablero from '../../components/Tablero';
+import construirBaraja from '../LevelOne/Construir_Baraja'
 
-const getEstadoInicial = () => {
-  const baraja = construirBaraja();
-  return {
-    baraja,
-    parejaSeleccionada: [],
-    estaComparando: false,
-    numeroDeIntentos: 0
-  };
-}
 
-class LevelOne extends Component {
+class LevelTwo extends Component {
   constructor(props) {
     super(props);
     this.state = getEstadoInicial();
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Header
-          numeroDeIntentos={this.state.numeroDeIntentos}
-          resetearPartida={() => this.resetearPartida()}
-        />
-        <Tablero
-          baraja={this.state.baraja}
-          parejaSeleccionada={this.state.parejaSeleccionada}
-          seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
-        />
-      </div>
-    );
   }
 
   seleccionarCarta(carta) {
@@ -76,7 +51,7 @@ class LevelOne extends Component {
         parejaSeleccionada: [],
         baraja,
         estaComparando: false,
-        numeroDeIntentos: this.state.numeroDeIntentos + 1
+        numeroDeIntentos: this.state.numeroDeIntentos - 1
       })
     }, 1000)
   }
@@ -94,8 +69,34 @@ class LevelOne extends Component {
       getEstadoInicial()
     );
   }
+
+  render() {
+    return (
+      <div className="App">
+        <Header
+          numeroDeIntentos={this.state.numeroDeIntentos}
+          resetearPartida={() => this.resetearPartida()}
+        />
+        <Tablero
+          baraja={this.state.baraja}
+          parejaSeleccionada={this.state.parejaSeleccionada}
+          seleccionarCarta={(carta) => this.seleccionarCarta(carta)}
+        />
+      </div>
+    );
+  }
 }
 
-export default LevelOne;
+const getEstadoInicial = () => {
+    const baraja = construirBaraja();
+    return {
+      baraja,
+      parejaSeleccionada: [],
+      estaComparando: false,
+      numeroDeIntentos: 15
+    };
+  }
+  
+export default LevelTwo;
 
 
