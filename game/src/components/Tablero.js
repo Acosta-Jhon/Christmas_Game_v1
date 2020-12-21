@@ -8,7 +8,16 @@ export default class Tablero extends Component {
             <div className="tablero">
                 {
                     this.props.baraja
-                    .map((carta) => <Carta icono={carta.icono}/>)
+                    .map((carta, index) => {
+                        const estaSiendoComparada = this.props.parejaSeleccionada.indexOf(carta) > -1;
+                     return <Carta
+                                key={index}
+                                icono={carta.icono}
+                                estaSiendoComparada={estaSiendoComparada}
+                                seleccionarCarta={() => {this.props.seleccionarCarta(carta)}}
+                                fueAdivinada = {carta.fueAdivinada}
+                            />
+                    })
                 }
             </div>
         );
