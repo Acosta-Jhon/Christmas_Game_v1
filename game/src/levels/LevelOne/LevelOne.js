@@ -1,8 +1,9 @@
-import { React,Component } from 'react';
-import './LevelOne.css';
-import  Header  from '../../components/Header';
-import Tablero from '../../components/Tablero';
-import construirBaraja from './Construir_Baraja'
+import { React, Component } from 'react';
+import './style/LevelOne.css';
+import Header from '../../components/Header';
+import Tablero from './component/Tablero';
+import construirBaraja from './construirBaraja1';
+import Swal from "sweetalert2";
 
 const getEstadoInicial = () => {
   const baraja = construirBaraja();
@@ -55,7 +56,7 @@ class LevelOne extends Component {
     }
   }
   compararPareja(parejaSeleccionada) {
-    this.setState({estaComparando: true});
+    this.setState({ estaComparando: true });
 
     setTimeout(() => {
       const [primeraCarta, segundaCarta] = parejaSeleccionada;
@@ -67,10 +68,28 @@ class LevelOne extends Component {
             return carta;
           }
 
-          return {...carta, fueAdivinada: true};
+          return { ...carta, fueAdivinada: true };
         });
       }
-
+      if (this.state.numeroDeIntentos === 1) {
+        Swal.fire({
+          title: 'Ooops! perdiste',
+          icon: 'warning',
+          iconHtml: '😔',
+          confirmButtonText: 'Reiniciar',
+          cancelButtonText: 'Inicio',
+          showCancelButton: true,
+          showCloseButton: true
+        })
+          .then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = '/level_one'
+              //getEstadoInicial();
+            } else {
+              window.location.href = '/'
+            }
+          })
+      }
       this.verificarSiHayGanador(baraja);
       this.setState({
         parejaSeleccionada: [],
@@ -82,10 +101,24 @@ class LevelOne extends Component {
   }
 
   verificarSiHayGanador(baraja) {
-    if (
-      baraja.filter((carta) => !carta.fueAdivinada).length === 0
-    ) {
-      alert(`Ganaste en ${this.state.numeroDeIntentos} intentos!`);
+   // baraja.forEach((carta) => carta.fueAdivinada = true);
+    if (baraja.filter((carta) => !carta.fueAdivinada).length === 0) {
+      Swal.fire({
+        title: '👏Excelente👏',
+        icon: 'success',
+        text: "¿Preparado para el Nivel 2?",
+        confirmButtonText: 'Siguiente',
+        cancelButtonText: 'Inicio',
+        showCancelButton: true,
+        showCloseButton: true
+      })
+        .then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = '/level_two'
+          } else {
+            window.location.href = '/'
+          }
+        })
     }
   }
 

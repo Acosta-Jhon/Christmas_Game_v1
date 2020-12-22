@@ -1,0 +1,16 @@
+.contentido{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url("C:\Users\jhon\JAC_Christmas_Game\game\src\assets\images\fondo.jpg");
+}
+.tablero{
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-left: 250px;
+    padding-right: 250px;
+    justify-content: space-around;
+    ;
+}

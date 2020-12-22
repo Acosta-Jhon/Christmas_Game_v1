@@ -1,14 +1,15 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
-//import './index.css';
 import reportWebVitals from './reportWebVitals';
 
 import Home from './Home';
 import LevelOne from "./levels/LevelOne/LevelOne"
-//import LevelTwo from './levels/LevelTwo/LevelTwo';
+import LevelTwo from './levels/LevelTwo/LevelTwo';
 import LevelThree from './levels/LevelThree/LevelThree';
+
 
 render(
   <Router>
@@ -16,7 +17,9 @@ render(
 
       <Route exact path="/" component={Home} />
       <Route exact path="/level_one" component={LevelOne} />
-      <Route exact path="/level_two" component={LevelThree} />
+      <Route exact path="/level_two" component={LevelTwo} />
+      <Route exact path="/level_three" component={LevelThree} />
+      
 
     </Switch>
   </Router>,
