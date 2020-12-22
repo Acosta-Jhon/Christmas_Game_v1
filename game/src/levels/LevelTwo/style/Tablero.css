@@ -1,4 +1,6 @@
 .contentido2{
+  width: 75%;
+  float: right;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -8,9 +10,6 @@
     float: right;
     display: flex;
     flex-wrap: wrap;
-    padding-top: 30px;
-    padding-left: 200px;
-    padding-right: 200px;
     justify-content: space-around;
-    ;
+
 }

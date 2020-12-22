@@ -1,7 +1,8 @@
 .carta {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 10px;
+  width:120px; /* or whatever width you want. */
+  max-width:120px; /* or whatever width you want. */
+  display: inline-block;
+  padding: 2px;
 }
 
 .portada {
@@ -22,4 +23,16 @@
 .ReactFlipCard {
   width: 100%;
   height: 100%;
+}
+
+.portada:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.carta:after {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
 }

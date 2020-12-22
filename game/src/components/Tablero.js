@@ -25,3 +25,5 @@ export default class Tablero extends Component {
         );
     }
 }
+
+
