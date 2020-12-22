@@ -1,10 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.css';
 import reportWebVitals from './reportWebVitals';
-
 import Home from './Home';
 import LevelOne from "./levels/LevelOne/LevelOne"
 import LevelTwo from './levels/LevelTwo/LevelTwo';

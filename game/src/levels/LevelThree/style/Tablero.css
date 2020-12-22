@@ -2,7 +2,7 @@
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("C:\Users\jhon\JAC_Christmas_Game\game\src\assets\images\fondo.jpg");
+  background-image: url("../../../assets/images/fondo.jpg");
 }
 .tablero3{
     float: right;
