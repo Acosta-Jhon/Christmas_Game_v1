@@ -1,21 +1,22 @@
 .carta {
-  width: 125px;
-  height: 125px;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
 }
 
 .portada {
-  width: 125px;
-  height: 125px;
-  background-color: #ffb300;
+  width: 120px;
+  height: 120px;
+  background-color: #ff2600ad;
 }
 
 .contenido {
-  width: 125px;
-  height: 125px;
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(3, 220, 244);
+  background-color: rgba(3, 244, 164, 0.46);
 }
 
 .ReactFlipCard {
