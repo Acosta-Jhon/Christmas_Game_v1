@@ -20,7 +20,7 @@ body{
 }
 .box-cards .box{
   background-color: #fff;
-  height: 450px;
+  height: 550px;
   width: 25%;
   color: #fff;
 }
@@ -72,7 +72,7 @@ body{
 .box p{
   font-family: 'Times New Roman', Times, serif;
   text-align: center;
-  color: rgb(12, 5, 5);
+  color: #ce901d;
   font-size: .9em;
   width: 100%;
   margin:70px auto;
@@ -91,12 +91,19 @@ body{
       transform: translateY(0);
   }
 }
-.title{
+.title1{
   font-family: Georgia, 'Times New Roman', Times, serif;
-  color: #C13A2A;
+  color: #a51515;
   text-align: center;
-  font-size:2em;
+  font-size: 2em;
 }
+.title2{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #038617;
+  text-align: center;
+  font-size: 2em;
+}
+
 
 @media screen and (max-width: 992px) {
   .historia
@@ -168,7 +175,7 @@ body{
 
 body
 {
-  background: url(../assets/images/snowing.png)  no-repeat center center fixed;
+  background: url(../assets/images/fondo.jpg)  no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

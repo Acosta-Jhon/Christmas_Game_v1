@@ -7,11 +7,16 @@
     align-content: center;
     align-items: center;
     border:  none;
-    background-image: url("./images/santaheader.jpg"); 
+    background-image: url("./images/santaheader.jpeg"); 
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .minidiv
 {
-    margin: 0 auto;
+    margin-top: 300px;
     text-align: center;
 }
 

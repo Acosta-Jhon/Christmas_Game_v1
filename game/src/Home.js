@@ -9,7 +9,8 @@ class Home extends Component {
     render() {
         return (
             <div className="historia">
-                <div className="title"><p>Ayuda a Santa !!</p></div>
+                <div className="title1"><h2>Christmas Game</h2></div>
+                <div className="title2"><h3>Ayuda a Santa !!</h3></div>
                 <div className="box-cards">
 
                     <div className="box box1">
