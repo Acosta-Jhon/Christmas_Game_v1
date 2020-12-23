@@ -16,7 +16,7 @@ class Home extends Component {
                     <div className="box box1">
                         <img src={navidad1} alt='not found'/>
                         <span className="botton botton1" >PASO 1</span>
-                        <p>Bienvenido, Santa necesita tu ayuda, por que sufre de pérdida de memoria, vamos allá!!!1</p>
+                        <p>Bienvenido, Santa necesita tu ayuda, por que sufre de pérdida de memoria, vamos allá!!!</p>
                     </div>
 
                     <div className="box box2">

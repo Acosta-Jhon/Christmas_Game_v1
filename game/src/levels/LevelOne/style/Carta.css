@@ -1,22 +1,22 @@
-.carta {
+.carta1 {
   width:120px; 
   max-width:120px; 
   display: inline-block;
 }
 
-.portada {
+.portada1 {
   width: 120px;
   height: 120px;
-  background-color: #ff2600ad;
+  background-color: #016645c4;
 }
 
-.contenido {
-  width: 180px;
-  height: 180px;
+.contenido1 {
+  width: 120px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(3, 244, 164, 0.46);
+  background-color: #ae230ac1;
 }
 
 .ReactFlipCard {
@@ -24,16 +24,21 @@
   height: 100%;
 }
 
-.portada:after {
+.portada1:after {
   content: '';
   display: block;
   padding-bottom: 100%;
 }
 
-.carta:after {
+.carta1:after {
   content: '';
   display: block;
   padding-bottom: 100%;
+}
+
+.fa{
+  font-size: 40px;
+  color:rgb(136, 3, 3)
 }
 
 /* ------------------------------------------------------------------------------------------------ */
@@ -41,53 +46,54 @@
 /* ----------------------------------------------------------------------------------------------- */
 @media screen and (max-width:900px)
 {
-  .carta {
+  .carta1 {
     width:80px; 
     max-width:80px; 
     display: flex;
     padding: 2px;
   }
 
-  .portada {
+  .portada1 {
     width: 80px;
     height: 80px;
-    background-color: #ff2600ad;
+    background-color: #016645c4;
   }
-  .contenido {
+  .contenido1 {
     width: 80px;
     height: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(3, 244, 164, 0.46);
+    background-color: #ff2600ad;
   }
   .fa{
-    font-size: 70px;
+    font-size: 40px;
+    color:rgb(136, 3, 3)
   }
 
 }
 
 @media screen and (max-width: 500px)
 {
-  .carta {
+  .carta1 {
     width:70px; 
     max-width:70px; 
     display: flex;
     padding: 2px;
   }
 
-  .portada {
+  .portada1 {
     width: 70px;
     height: 70px;
-    background-color: #ff2600ad;
+    background-color: #016645c4;
   }
-  .contenido {
+  .contenido1 {
     width: 70px;
     height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(3, 244, 164, 0.46);
+    background-color: #ff2600ad;
   }
   .fa{
     font-size: 50px;

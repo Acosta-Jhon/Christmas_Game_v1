@@ -52,7 +52,7 @@ class LevelTwo extends Component {
 
     if (parejaSeleccionada.length === 2) {
       this.compararPareja(parejaSeleccionada);
-      console.log(parejaSeleccionada)
+      
     }
   }
   compararPareja(parejaSeleccionada) {
@@ -83,7 +83,7 @@ class LevelTwo extends Component {
         })
           .then((result) => {
             if (result.isConfirmed) {
-              window.location.href = '/level_one'
+              window.location.href = '/level_two'
               //getEstadoInicial();
             } else {
               window.location.href = '/'

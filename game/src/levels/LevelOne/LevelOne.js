@@ -52,7 +52,6 @@ class LevelOne extends Component {
 
     if (parejaSeleccionada.length === 2) {
       this.compararPareja(parejaSeleccionada);
-      console.log(parejaSeleccionada)
     }
   }
   compararPareja(parejaSeleccionada) {
