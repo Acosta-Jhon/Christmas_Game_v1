@@ -1,9 +1,5 @@
-<<<<<<< HEAD
-.contentido{
-=======
-.contentido2{
-  padding: 50px 0px 50px 0px;
->>>>>>> 4e18f5798052256a61dfc56f5d75d157aafb0faf
+.content{
+  padding: 10px 0px 50px 0px;
   width: 75%;
   float: right;
   height: 100vh;
@@ -12,7 +8,7 @@
   background-image: url("../../../assets/images/fondo.jpg"); 
 }
 
-.tablero2{
+.table{
     float: right;
     display: flex;
     padding-left: 200px;
@@ -30,7 +26,7 @@
 
 @media screen and (max-width: 900px)
 {
-  .contentido{
+  .content{
     padding-top: 5px;
     display: flex;
     align-items: center;
@@ -38,7 +34,7 @@
     background-image: url("../../../assets/images/fondo.jpg");
   }
   
-  .tablero2{
+  .table{
     padding: 10px;
     padding-left: 150px;
     padding-right: 150px;
@@ -50,7 +46,7 @@
 
 @media screen and (max-width: 500px)
 {
-  .contentido{
+  .content{
     padding-top: 10px;
     width: 100%;
     display: flex;
@@ -59,7 +55,7 @@
     background-image: url("../../../assets/images/fondo.jpg");
   }
 
-  .tablero2{
+  .table{
     padding: 5px;
     display: flex;
     flex-wrap: wrap;

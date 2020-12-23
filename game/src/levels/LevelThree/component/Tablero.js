@@ -5,8 +5,8 @@ import Carta from '../component/Carta';
 export default class Tablero extends Component {
     render() {
         return (
-            <div className="contentido">
-                <div className="tablero">
+            <div className="contentido3">
+                <div className="tablero3">
                     {
                         this.props.baraja
                             .map((carta, index) => {
