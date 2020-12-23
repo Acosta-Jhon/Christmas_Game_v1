@@ -2,11 +2,11 @@ import { React, Component } from 'react';
 import './style/LevelThree.css';
 import Header from '../../components/Header';
 import Tablero from './component/Tablero';
-import construirBaraja from './construirBaraja3';
+import construirBaraja3 from './construirBaraja3';
 import Swal from "sweetalert2";
 
 const getEstadoInicial = () => {
-  const baraja = construirBaraja();
+  const baraja = construirBaraja3();
   return {
     baraja,
     parejaSeleccionada: [],

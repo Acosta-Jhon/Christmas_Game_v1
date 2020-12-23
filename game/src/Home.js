@@ -13,19 +13,19 @@ class Home extends Component {
                 <div className="box-cards">
 
                     <div className="box box1">
-                        <img src={navidad1} />
+                        <img src={navidad1} alt='not found'/>
                         <span className="botton botton1" >PASO 1</span>
                         <p>Bienvenido, Santa necesita tu ayuda, por que sufre de pérdida de memoria, vamos allá!!!1</p>
                     </div>
 
                     <div className="box box2">
-                        <img src={navidad2} />
+                        <img src={navidad2} alt='not found'/>
                         <span className="botton botton2">PASO 2</span>
                         <p>Ayuda a recordar los juguetes para los niños con la siguiente dinámica  y salva la navidad junto con Santa</p>
                     </div>
 
                     <div className="box box3">
-                        <a href="./level_one">  <img src={navidad3} /></a>
+                        <a href="./level_one">  <img src={navidad3}alt='not found' /></a>
                         <span className="botton botton3">CLICK EN LA IMAGEN PARA EMPEZAR</span>
                         <p>Empareja los juguetes que tengan la misma similitud</p>
                     </div>
