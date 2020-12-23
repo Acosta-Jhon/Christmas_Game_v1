@@ -8,7 +8,7 @@ import './assets/Home.css';
 class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="historia">
                 <div className="title"><p>Ayuda a Santa !!</p></div>
                 <div className="box-cards">
 

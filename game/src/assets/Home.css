@@ -44,7 +44,7 @@ body{
   animation: primero .5s linear forwards;
 }
 .box img{
-  height: 300px;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
@@ -96,4 +96,84 @@ body{
   color: #C13A2A;
   text-align: center;
   font-size:2em;
+}
+
+@media screen and (max-width: 992px) {
+  .historia
+  {
+    align-content: center;
+    align-items: center;
+    text-align: center;  }
+
+  .box-cards{
+    text-align: center;  
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .box-cards .box{
+    margin: 10px;
+    text-align: center;  
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .historia
+  {
+    align-content: center;
+    align-items: center;
+    text-align: center;  }
+
+  .box-cards{
+    text-align: center;  
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+    
+  }
+
+  .box-cards .box{
+    margin: 10px;
+    text-align: center;  
+    height: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .box img{
+    padding-top: 20px;
+    height: auto;
+    width: 250px;
+    object-fit: cover;
+  }
+}
+
+body
+{
+  background: url(../assets/images/snowing.png)  no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
 }
