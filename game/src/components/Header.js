@@ -7,7 +7,7 @@ class Header extends Component {
       <div className="marcador">
         <div className="minidiv">
           <div className="titulo">JAC CHRISTMAS GAME</div>
-          <div>
+          <div className="contenedor_boton">
             <button className="boton-reiniciar" onClick={this.props.resetearPartida}>
               Reiniciar
             </button>

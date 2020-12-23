@@ -1,8 +1,7 @@
 .carta {
-  width:120px; /* or whatever width you want. */
-  max-width:120px; /* or whatever width you want. */
+  width:120px; 
+  max-width:120px; 
   display: inline-block;
-  padding: 2px;
 }
 
 .portada {
@@ -35,4 +34,33 @@
   content: '';
   display: block;
   padding-bottom: 100%;
+}
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Linea la cual permite posicionar las cartas dependiendo el dispositivo*/
+/* ----------------------------------------------------------------------------------------------- */
+@media screen and (max-width: 700px)
+{
+  .carta {
+    width:90px; 
+    max-width:900px; 
+    display: flex;
+    padding: 2px;
+  }
+
+  .portada {
+    width: 90px;
+    height: 90px;
+    background-color: #ff2600ad;
+  }
+  .contenido {
+    width: 90px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(3, 244, 164, 0.46);
+  }
+
+
 }

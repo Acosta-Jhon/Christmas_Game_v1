@@ -13,3 +13,25 @@
     justify-content: space-around;
 
 }
+
+/* ------------------------------------------------------------------------------------------------ */
+/* Linea la cual permite posicionar el header lateral en la parte superior en dispositicos peuqños */
+/* ----------------------------------------------------------------------------------------------- */
+
+@media screen and (max-width: 700px)
+{
+  .contentido2{
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url("../../../assets/images/fondo.jpg");
+  }
+  .tablero2{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
