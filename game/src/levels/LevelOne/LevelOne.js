@@ -73,9 +73,9 @@ class LevelOne extends Component {
       }
       if (this.state.numeroDeIntentos === 1) {
         Swal.fire({
-          title: 'Ooops! perdiste',
+          title: 'Fuiste muy lento y te contagiaste del virus',
           icon: 'warning',
-          iconHtml: '😔',
+          iconHtml: '😷',
           confirmButtonText: 'Reiniciar',
           cancelButtonText: 'Inicio',
           showCancelButton: true,

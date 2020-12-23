@@ -168,6 +168,9 @@ body{
 
 body
 {
+  background-image: url(../assets/images/snowing.png);
+  background-repeat: no-repeat;
+  width: 100%;
   margin: 0;
   padding: 0;
   display: flex;

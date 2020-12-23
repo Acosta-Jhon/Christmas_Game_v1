@@ -73,9 +73,9 @@ class LevelThree extends Component {
       }
       if (this.state.numeroDeIntentos === 1) {
         Swal.fire({
-          title: 'Ooops! perdiste',
+          title: 'Fuiste muy lento y te contagiaste del virus',
           icon: 'warning',
-          iconHtml: '😔',
+          iconHtml: '😷',
           confirmButtonText: 'Reiniciar',
           cancelButtonText: 'Inicio',
           showCancelButton: true,
@@ -107,7 +107,7 @@ class LevelThree extends Component {
         title: '🎁GANASTE🎁',
         width: 600,
         padding: '3em',
-        text:'👏FELICIDADES👏',
+        text:'👏GRACIAS POR AYUDAR A SANTA👏',
         imageUrl: 'https://images.vexels.com/media/users/3/157725/isolated/preview/c377387f8df8d2c83f9c4d614b226d65-letras-de-feliz-navidad-by-vexels.png',
         imageWidth: 350,
         imageHeight: 350,
