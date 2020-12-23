@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import '../style/Tablero.css';
-import Carta from '../../../components/Carta';
+import Carta from '../component/Carta';
 
 export default class Tablero extends Component {
     render() {
         return (
-            <div className="contentido">
-                <div className="tablero">
+            <div className="contentido1">
+                <div className="tablero1">
                     {
                         this.props.baraja
                             .map((carta, index) => {

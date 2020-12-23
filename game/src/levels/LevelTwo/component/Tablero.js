@@ -5,7 +5,7 @@ import Carta from '../../../components/Carta';
 export default class Tablero extends Component {
     render() {
         return (
-            <div className="contentido2">
+            <div className="contentido">
                 <div className="tablero2">
                     {
                         this.props.baraja

@@ -1,33 +1,59 @@
-.contentido2{
+.contentido{
   width: 75%;
   float: right;
   height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("../../../assets/images/fondo.jpg");
+  background-image: url("../../../assets/images/fondo.jpg"); 
 }
+
 .tablero2{
     float: right;
     display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
     flex-wrap: wrap;
     justify-content: space-around;
-
+}
+.fa{
+  font-size: 90px;
 }
 
 /* ------------------------------------------------------------------------------------------------ */
 /* Linea la cual permite posicionar el header lateral en la parte superior en dispositicos peuqños */
 /* ----------------------------------------------------------------------------------------------- */
 
-@media screen and (max-width: 700px)
+@media screen and (max-width: 900px)
 {
-  .contentido2{
-    padding-top: 100px;
+  .contentido{
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: url("../../../assets/images/fondo.jpg");
+  }
+  
+  .tablero2{
+    padding: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 500px)
+{
+  .contentido{
+    padding-top: 10px;
     width: 100%;
     display: flex;
     align-items: center;
     text-align: center;
     background-image: url("../../../assets/images/fondo.jpg");
   }
+
   .tablero2{
     padding: 5px;
     display: flex;
@@ -35,3 +61,4 @@
     justify-content: space-around;
   }
 }
+

@@ -101,7 +101,7 @@ class LevelThree extends Component {
   }
 
   verificarSiHayGanador(baraja) {
-    //baraja.forEach((carta) => carta.fueAdivinada = true);
+    baraja.forEach((carta) => carta.fueAdivinada = true);
     if (baraja.filter((carta) => !carta.fueAdivinada).length === 0) {
       Swal.fire({
         title: '🎁GANASTE🎁',
@@ -112,11 +112,11 @@ class LevelThree extends Component {
         imageWidth: 350,
         imageHeight: 350,
         imageAlt: 'Custom image',
-        confirmButtonText: 'Recomendaciones ante el Covid-19',
+        confirmButtonText: 'Inicio',
       })
       .then((result) => {
         if (result.isConfirmed) {
-          window.location.href = '/recomendaciones'
+          window.location.href = '/'
           //getEstadoInicial();
         } else {
           window.location.href = '/'

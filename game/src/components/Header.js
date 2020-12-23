@@ -6,14 +6,14 @@ class Header extends Component {
     return (
       <div className="marcador">
         <div className="minidiv">
-          <div className="titulo">JAC CHRISTMAS GAME</div>
+          <div className="titulo">CHRISTMAS GAME</div>
+          <div className="titulo">
+            Intentos: {this.props.numeroDeIntentos}
+          </div>
           <div className="contenedor_boton">
             <button className="boton-reiniciar" onClick={this.props.resetearPartida}>
               Reiniciar
             </button>
-          </div>
-          <div className="titulo">
-            Intentos: {this.props.numeroDeIntentos}
           </div>
         </div>
       </div>
