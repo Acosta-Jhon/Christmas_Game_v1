@@ -20,7 +20,7 @@ body{
 }
 .box-cards .box{
   background-color: #fff;
-  height: 550px;
+  height: 520px;
   width: 25%;
   color: #fff;
 }
@@ -95,13 +95,11 @@ body{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #a51515;
   text-align: center;
-  font-size: 2em;
 }
 .title2{
   font-family: Georgia, 'Times New Roman', Times, serif;
   color: #038617;
   text-align: center;
-  font-size: 2em;
 }
 
 

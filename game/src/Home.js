@@ -1,8 +1,8 @@
 import { React, Component } from 'react';
 
-import navidad1 from './assets/images/santa.jpg';
-import navidad2 from './assets/images/santa 2.jpg';
-import navidad3 from './assets/images/santa3.jpg';
+import navidad1 from './assets/images/santa.png';
+import navidad2 from './assets/images/santa2.jpg';
+import navidad3 from './assets/images/jugar.png';
 import './assets/Home.css';
 
 class Home extends Component {
